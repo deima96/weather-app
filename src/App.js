@@ -3,6 +3,7 @@ import { useState } from "react";
 import { key } from "./Key";
 import WeatherInput from "./components/WeatherInput";
 import { WeatherDisplay } from "./components/WeatherDisplay";
+import Error from "./components/Error";
 
 function App() {
   const [error, setError] = useState();
@@ -30,7 +31,7 @@ function App() {
     <div className="App">
       <WeatherInput searchHandler={searchWeather} />
       {resData && <WeatherDisplay result={resData} />}
-      {error && <div>{error.message}</div>}
+      {error && <Error title="An Error Occurred!" message={error.message} />}
     </div>
   );
 }
