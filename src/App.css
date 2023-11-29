@@ -65,5 +65,16 @@ p{
   font-weight: bold;
   color:#fff;
 }
+.error {
+  max-width: 40rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  background-color: #f4c7c7;
+  color: #3e0505;
+  border: 3px solid #3e0505;
+}
+.error p{
+  color: #3e0505;
+}
 
 
